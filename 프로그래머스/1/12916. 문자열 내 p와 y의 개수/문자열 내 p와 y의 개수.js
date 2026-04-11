@@ -1,6 +1,3 @@
-function solution(s){   
-    let p = s.toLowerCase().split("").filter((e) => e === "p");
-    let y = s.toLowerCase().split("").filter((e) => e === "y");
-    
-    return p.length === y.length;
+function solution(s){    
+    return s.toLowerCase().split("p").length === s.toLowerCase().split("y").length;
 }
