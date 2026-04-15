@@ -3,11 +3,7 @@ function solution(left, right) {
     
     for (let i = left; i < right + 1; i++) {
         // 완전제곱수의 경우 약수의 개수가 홀수
-        if (Number.isInteger(Math.sqrt(i))) {
-            sum -= i;
-        } else {
-            sum += i;
-        }
+        sum += Number.isInteger(Math.sqrt(i)) ? -i : i;
     }
     
     return sum;
